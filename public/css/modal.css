@@ -1,0 +1,191 @@
+/* modal */
+
+.modal {
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    background: rgba(0,0,0,0.4);
+
+    overflow: auto;
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.modal .container {
+    width: min(60%, 700px);
+    max-height: 80%;
+    padding: 0;
+    margin: auto;
+    animation: down 400ms;
+}
+
+.modal header {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+    background: black;
+    color: white;
+}
+
+.modal {
+    text-align: center;
+}
+
+.modal header h2 {
+    width: fit-content;
+    margin: 50px auto 20px;
+}
+
+
+.modal .container .flex {
+    width: 100%;
+    padding: 20px;
+}
+
+.modal section h3 {
+    margin: 0 0 10px;
+}
+
+
+.exitButton {
+    padding: 10px;
+    font-size: 24px;
+    border-radius: 0 15px 0 5px;
+    background: red;
+    float: right;
+    user-select: none;
+    transition: background 100ms;
+}
+
+.exitButton:hover {
+    background: rgb(225, 0, 0);
+}
+
+
+/* ================================== */
+/* gallery */
+
+.modal .galleryModal {
+    width: min(90%, 800px);
+}
+
+.galleryModal .grid {
+    padding: 25px;
+    margin-bottom: 25px;
+    overflow: auto;
+}
+
+.galleryModal section.flex.column {
+    height: 100%;
+    padding: 0;
+    border-radius: 8px;
+    background: black;
+    position: relative;
+}
+
+.galleryModal section.flex.column:hover img {
+    box-shadow: 0 0 5px 1px #888888;
+}
+
+
+/* ================================== */
+/* videos */
+
+.galleryModal .thumbInfo {
+    bottom: 8px;
+}
+
+.playVideo {
+    height: 100%;
+    z-index: 2;
+    position: absolute;
+}
+
+.playVideo.flex img {
+    width: 30%;
+    height: auto;
+    border-radius: 50%;
+    background: rgb(190, 190, 190);
+    box-shadow: none;
+    opacity: .7;
+    transform: translateY(-10px);
+}
+
+.playVideo:hover img {
+    opacity: .9;
+    transition: 200ms;
+}
+
+
+/* ================================== */
+/* selected video - img */
+
+.grid .modal {
+    padding-top: 50px!important;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.grid .modal img,
+.grid .modal video {
+    box-shadow: none!important;
+}
+
+.modal .topBar {
+    width: 100%;
+    height: 80px;
+    color: white;
+    background: rgba(0, 0, 0, .7);
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+
+.modal .topBar .exitButton {
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    background: white!important;
+    border-radius: 50%;
+    border: none;
+    background: none;
+}
+
+.modal .topBar .exitButton:hover {
+    background: rgb(230, 230, 230)!important;
+}
+
+.modal main {
+    max-height: 80%;
+    max-width: 90%;
+}
+
+.modal main video {
+    object-fit: cover;
+}
+
+.modal .mainImg {
+    width: 100%;
+    height: 100%;
+    background: black;
+    position: relative;
+}
+
+.mainImg img {
+    object-fit: contain;
+}
+
+.prevPhoto {
+    left: 1px;
+}
+
+.nextPhoto {
+    right: 1px;
+}
+
+@media (max-height: 400px) {
+    .modal main {
+        transform: translateY(20px)
+    }
+}

@@ -1,0 +1,170 @@
+/* ================================================================= */
+/* main containers */
+
+.sectionContainer {
+    padding: 20px 0;
+}
+
+.sectionContainer.dark {
+    background: black;
+}
+
+.sectionContainer.dark h1, 
+.sectionContainer.dark .subtitle,
+.sectionContainer.dark .header {
+    color: white;
+}
+
+.sectionContainer.dark .moreInfo {
+    color: black;
+    background: rgb(245, 245, 245);
+}
+
+.sectionContainer.dark .moreInfo:hover {
+    background: rgb(225, 225, 225);
+}
+
+/* ================================================================= */
+/* sections */
+
+.section {
+    width: 90%;
+    max-width: 950px;
+    margin: 40px 0;
+}
+
+.section h1 {
+    margin: 0 0 25px;
+}
+
+.section p.justify {
+    margin: 0;
+}
+
+/* ================================================================= */
+/* generic container */
+
+.container {
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+    border: var(--border);
+    background: var(--background);
+}
+
+/* ================================================================= */
+/* band members photos */
+
+.photosContainer {
+    width: 100%;
+    margin-top: 20px;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.photosHalf {
+    width: 47.5%;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.photo {
+    width: 45%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.photo h4 {
+    margin-top: 0;
+    border-radius: 5px;
+}
+
+.photo img, .photo video {
+    width: 99%;
+    height: 99%;
+    border-radius: 8px;
+    border: var(--border);
+    box-shadow: 0 0 5px 1px #e4e4e4;
+    user-select: none;
+}
+
+.photo:hover h4 {
+    text-shadow: 0 0 2px #c3c3c3;
+}
+
+.photo:hover img {
+    box-shadow: 0 0 5px 1px #bbbbbb;
+}
+
+
+/* ================================================================= */
+/* see-all button */
+
+.seeAllDiv {
+    width: 100%;
+    margin: 0 0 15px;
+}
+
+.seeAllDiv.seeAllText {
+    margin: 15px 0 0;
+}
+
+
+.seeAllDiv a {
+    width: fit-content;
+    padding: 0 10px;
+    font-size: 14px;
+    float: right;
+}
+
+
+/* ================================================================= */
+/* contact info */
+
+.contact {
+    width: 90%;
+    margin: 10px;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.contactInfo {
+    align-items: flex-start;
+}
+
+.contactOption {
+    margin: 10px 0;
+}
+
+.contactOption img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+a.contactOption:hover img {
+    opacity: .6;
+}
+
+/* ================================================================= */
+/* footer */
+
+footer {
+    width: 80%;
+    max-width: 750px;
+}
+
+footer hr {
+    width: 100%;
+}
+
+footer img {
+    width: 18px;
+    margin: 0 5px;
+}
+
+.footer {
+    width: 70%;
+    margin: 20px 0;
+    justify-content: space-between;
+}

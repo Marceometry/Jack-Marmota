@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Home | Jack Marmota</title>
+    <link rel="icon" href="../jm-media/icons/page-icon.png" type="image/x-icon">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/css/main.css">
+    <link rel="stylesheet" href="./public/css/index.css">
+    <link rel="stylesheet" href="./public/css/nav.css">
+    <link rel="stylesheet" href="./public/css/banner-slides.css">
+    <link rel="stylesheet" href="./public/css/shows-cards.css">
+    <link rel="stylesheet" href="./public/css/modal.css">
+    <link rel="stylesheet" href="./public/css/audio-player.css">
+    <link rel="stylesheet" href="./public/css/audio-buttons.css">
+    <link rel="stylesheet" href="./public/css/progress-bar.css">
+    <link rel="stylesheet" href="./public/css/playlist.css">
+    <link rel="stylesheet" href="./public/css/pop-ups.css">
+    <link rel="stylesheet" href="./public/css/animations.css">
+    <link rel="stylesheet" href="./public/css/mobile.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;800&display=swap">
+</head>
+<body>
+    <div id="body">
+        <!-- ======================================================== -->
+        <!-- BARRA DE NAVEGAÇÃO -->
+        <ul class="nav flex">
+            <li><a>HOME</a></li>
+            <li><a href="#shows">SHOWS</a></li>
+            <li><a href="#contact">CONTATO</a></li>
+            <li><a href="about.html">SOBRE</a></li>
+            <li><a href="songs.html">MÚSICAS</a></li>
+            <li><a href="photos.html">FOTOS</a></li>
+            <li><a href="videos.html">VÍDEOS</a></li>
+            <li><a>MAIS</a>
+                <ul class="moreHidden flex column">
+                    <li><a href="#shows">SHOWS</a></li>
+                    <li><a href="#contact">CONTATO</a></li>
+                    <li><a href="about.html">SOBRE</a></li>
+                    <li><a href="songs.html">MÚSICAS</a></li>
+                    <li><a href="photos.html">FOTOS</a></li>
+                    <li><a href="videos.html">VÍDEOS</a></li>
+                </ul>
+		    </li>
+        </ul>
+
+
+        <!-- ======================================================== -->
+        <!-- SLIDES -->
+        <div class="banner">
+            <div class="mySlides flex">
+                <img src="../jm-media/images/images-1.jpg" alt="">
+            </div>
+            
+            <div class="mySlides flex">
+                <img src="../jm-media/images/images-2.jpg" alt="">
+            </div>
+            
+            <div class="mySlides flex">
+                <img src="../jm-media/images/images-3.jpg" alt="">
+            </div>
+
+            <a id="prevSlide" class="prev">&#10094;</a>
+            <a id="nextSlide" class="next">&#10095;</a>
+            
+            <div class="dotContainer flex">
+                <span class="dot" onclick="index.currentSlide(1)"></span> 
+                <span class="dot" onclick="index.currentSlide(2)"></span> 
+                <span class="dot" onclick="index.currentSlide(3)"></span> 
+            </div>
+        </div>
+
+
+        <!-- ======================================================== -->
+        <!-- START -->
+        <div class="sectionContainer white flex">
+            <section class="section flex column">
+                <div class="flex">
+                    <h1 id="pageStart">JACK MARMOTA</h1>
+                </div>
+
+                <div>
+                    <p class="justify">I have created my band's fictional website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+
+                <!-- <div class="seeAllDiv seeAllText">
+                    <a class="moreInfo seeAll flex">Mostrar mais</a>
+                </div> -->
+
+
+                <div class="photosContainer flex">
+                    <div class="photosHalf flex">
+                        <a id="photo1" class="photo" href="#pageStart">
+                            <h4>Marcelino Teixeira</h4>
+
+                            <img src="../jm-media/images/marcelino.jpg" alt="Marcelino Teixeira">
+                        </a>
+                        
+                        <a id="photo2" class="photo" href="#pageStart">
+                            <h4>Kevin Gomes</h4>
+
+                            <img src="../jm-media/images/black-ice-album.jpg" alt="Kevin Gomes">
+                        </a>
+                    </div>
+                        
+                    <div class="photosHalf flex">
+                        <a id="photo3" class="photo" href="#pageStart">
+                            <h4>Renan Lima</h4>
+
+                            <img src="../jm-media/images/highway-to-hell-album.jpg" alt="Renan Lima">
+                        </a>
+                        
+                        <a id="photo4" class="photo" href="#pageStart">
+                            <h4>Abdiel Quintanilha</h4>
+
+                            <img src="../jm-media/images/abdiel.jpg" alt="Abdiel Quintanilha">
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+        <!-- ======================================================== -->
+        <!-- PLAYER -->
+        <div class="sectionContainer dark flex">
+            <section class="section flex column">
+                <div class="flex">
+                    <h1 id="songs">MÚSICAS</h1>
+                </div>
+
+
+                <div class="container playlist flex column">
+                    <nav class="list-settings flex">
+                        <img id="reorder" class="button small" src="../jm-media/icons/sort-24px.svg">
+                        <ul id="reorderOptions" class="optionsPopUp none flex column animate-reorder-down">
+                            <li id="orderByName">Nome</li>
+                            <li id="orderByArtist">Artista</li>
+                            <li id="orderByAlbum">Álbum</li>
+                        </ul>
+                    </nav>
+                    
+                    <ul id="playlist"><!-- criada com javascript --></ul>                
+                </div>
+
+
+                <div class="container player flex">
+                    <nav id="minimizePlayerNav" class="aditionalButton flex">
+                        <img id="minimizePlayer" class="button aditionalButton" src="../jm-media/icons/keyboard_arrow_down-24px.svg">
+
+                        <div id="volumeBarPopUp" class="volumeBar aditionalButton flex">
+                            <img id="mute" class="button" src="../jm-media/icons/volume_up-24px.svg">
+                            <input type="range" min="0" max="100" step="1" id="volumeBar"></input>
+                        </div>
+
+                        <div class="songOptionsContainer flex column">
+                            <img id="songOptions" class="button aditionalButton" src="../jm-media/icons/more_vert-24px.svg">
+                            <ul id="songOptionsList" class="optionsPopUp none flex column animate-options-down">
+                                <li id="currentSongDetails">Detalhes</li>
+                                <li id="">Artista</li>
+                                <li id="">Álbum</li>
+                                <li id="">Excluir</li>
+                            </ul>
+                        </div>
+                    </nav>
+
+
+                    <div id="currentSongAlbum" class="album-img minimizedPlayer flex">
+                        <img id="currentAlbumImg" src="" alt="">
+                    </div>
+
+
+                    <div id="songMetadata" class="minimizedPlayer flex column">
+                        <div id="titleContainer" class="flex column">
+                            <h3 id="title">Título da Música</h3>
+                        </div>
+
+                        <section class="flex">
+                            <img id="random" class="button aditionalButton small" src="../jm-media/icons/random-24px.svg">
+                            
+                            <div id="artistAlbumContainer" class="flex column">
+                                <span id="artistAlbum" data-artist="" data-album="">Artista - Álbum</span>
+                            </div>
+                            
+                            <img id="repeat" class="button aditionalButton small" src="../jm-media/icons/repeat-24px.svg">
+                        </section>
+                    </div>
+
+                    
+                    <audio id="audio">                
+                        <p>O seu navegador não suporta a tag audio</p>
+                    </audio>
+                
+
+                    <div id="progressBarContainer" class="aditionalButton flex">
+                        <div class="time">
+                            <span id="currentTime">00:00</span>
+                        </div>
+
+                        <div class="progressBar flex column">
+                            <canvas id="canvas-progress"></canvas>
+                            <input type="range" min="0" max="0" step="1" id="progressBar"></input>
+                        </div>
+
+                        <div class="time">
+                            <span id="duration">--:--</span>
+                        </div>
+                    </div>
+
+                
+                    <div class="buttons minimizedPlayer flex">
+                        <img id="back" class="button" src="../jm-media/icons/fast_rewind-24px.svg">
+                        <img id="replay10" class="button aditionalButton" src="../jm-media/icons/replay_10-24px.svg">
+                        <img id="playPause" class="button" src="../jm-media/icons/play_arrow-24px.svg">
+                        <img id="forward10" class="button aditionalButton" src="../jm-media/icons/forward_10-24px.svg">
+                        <img id="next" class="button" src="../jm-media/icons/fast_forward-24px.svg">
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+        <!-- ======================================================== -->
+        <!-- CARDS -->
+        <div class="sectionContainer white flex">
+            <div class="section flex column">
+                <div class="flex">
+                    <h1 id="shows">SHOWS</h1>
+                </div>
+
+                <div class="seeAllDiv">
+                    <a class="moreInfo seeAll flex">Mostrar mais</a>
+                </div>
+
+                <div class="showsCards">
+                    <div class="grid">
+                        <div class="card">
+                            <div class="cardImg">
+                                <img src="../jm-media/images/images-1.jpg" alt="">
+                            </div>
+
+                            <div class="cardBody flex column">
+                                <div class="showDescription">
+                                    <h3 class="showLocation">Hambúrguer dos Guris</h3>
+                                    <span class="showDate">08 Out, 2021 - 20:00h</span>
+
+                                    <p>Descrição do show no Hambúrguer dos Guris que vai acontecer no dia que tá marcado</p>
+                                </div>
+
+                                <a class="moreInfo openModal flex">Detalhes</a>
+                            </div>
+
+                            <div class="modal flex">
+                                <div class="container flex column">
+                                    <header>
+                                        <a class="exitButton">×</a>
+                                        <h2>Detalhes</h2>
+                                    </header>
+                                    <div class="flex column">
+                                        <section class="flex column">
+                                            <h3>Local</h3>
+                                            <span>Hambúrguer dos Guris</span>
+                                        </section>
+                                        
+                                        <section class="flex column">
+                                            <h3>Data e Hora</h3>
+                                            <span>08 Out, 2021 - 20:00h</span>
+                                        </section>
+                                        
+                                        <section class="flex column">
+                                            <h3>Repertório principal</h3>
+                                            <span>Beatles, Creedence e Queen</span>
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="cardImg">
+                                <img src="../jm-media/images/images-2.jpg" alt="">
+                            </div>
+
+                            <div class="cardBody flex column">
+                                <div class="showDescription">
+                                    <h3 class="showLocation">Zé Café e Petiscos</h3>
+                                    <span class="showDate">15 Nov, 2021 - 22:00h</span>
+
+                                    <p>Descrição do show no Zé Café e Petiscos que vai acontecer no dia marcado</p>
+                                </div>
+                                
+                                <a class="moreInfo openModal flex">Detalhes</a>
+                            </div>
+
+                            <div class="modal flex">
+                                <div class="container flex column">
+                                    <header>
+                                        <a class="exitButton">×</a>
+                                        <h2>Detalhes</h2>
+                                    </header>
+                                    <div class="flex column">
+                                        <section class="flex column">
+                                            <h3>Local</h3>
+                                            <span>Zé Café e Petiscos</span>
+                                        </section>
+                                        
+                                        <section class="flex column">
+                                            <h3>Data e Hora</h3>
+                                            <span>15 Nov, 2021 - 22:00h</span>
+                                        </section>
+                                        
+                                        <section class="flex column">
+                                            <h3>Repertório principal</h3>
+                                            <span>ACDC, Nirvana e Guns and Roses</span>
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="cardImg">
+                                <img src="../jm-media/images/images-3.jpg" alt="">
+                            </div>
+
+                            <div class="cardBody flex column">
+                                <div class="showDescription">
+                                    <h3 class="showLocation">Hambúrguer dos Guris</h3>
+                                    <span class="showDate">22 Dez, 2021 - 23:00h</span>
+
+                                    <p>Descrição do show no Hambúrguer dos Guris que vai acontecer no dia marcado ali para ra pa pa</p>
+                                </div>
+                                
+                                <a class="moreInfo openModal flex">Detalhes</a>
+                            </div>
+
+                            <div class="modal flex">
+                                <div class="container flex column">
+                                    <header>
+                                        <a class="exitButton">×</a>
+                                        <h2>Detalhes</h2>
+                                    </header>
+                                    <div class="flex column">
+                                        <section class="flex column">
+                                            <h3>Local</h3>
+                                            <span>Hambúrguer dos Guris</span>
+                                        </section>
+                                        
+                                        <section class="flex column">
+                                            <h3>Data e Hora</h3>
+                                            <span>22 Dez, 2021 - 23:00h</span>
+                                        </section>
+                                        
+                                        <section class="flex column">
+                                            <h3>Repertório principal</h3>
+                                            <span>Raul Seixas, Tim Maia e Legião Urbana</span>
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="hiddenContent grid none animate-down">
+                        <div class="card">
+                            <div class="cardImg">
+                                <img src="../jm-media/images/images-3.jpg" alt="">
+                            </div>
+
+                            <div class="cardBody flex column">
+                                <div class="showDescription">
+                                    <h3 class="showLocation">Hambúrguer dos Guris</h3>
+                                    <span class="showDate">22 Dez, 2021 - 23:00h</span>
+
+                                    <p>Descrição do show no Hambúrguer dos Guris que vai acontecer no dia marcado ali para ra pa pa</p>
+                                </div>
+                                
+                                <a class="moreInfo openModal flex">Detalhes</a>
+                            </div>
+
+                            <div class="modal flex">
+                                <div class="container flex column">
+                                    <header>
+                                        <a class="exitButton">×</a>
+                                        <h2>Detalhes</h2>
+                                    </header>
+                                    <div class="flex column">
+                                        <section class="flex column">
+                                            <h3>Local</h3>
+                                            <span>Hambúrguer dos Guris</span>
+                                        </section>
+                                        
+                                        <section class="flex column">
+                                            <h3>Data e Hora</h3>
+                                            <span>22 Dez, 2021 - 23:00h</span>
+                                        </section>
+                                        
+                                        <section class="flex column">
+                                            <h3>Repertório principal</h3>
+                                            <span>Raul Seixas, Tim Maia e Legião Urbana</span>
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="cardImg">
+                                <img src="../jm-media/images/images-1.jpg" alt="">
+                            </div>
+
+                            <div class="cardBody flex column">
+                                <div class="showDescription">
+                                    <h3 class="showLocation">Hambúrguer dos Guris</h3>
+                                    <span class="showDate">08 Out, 2021 - 20:00h</span>
+
+                                    <p>Descrição do show no Hambúrguer dos Guris que vai acontecer no dia que tá marcado</p>
+                                </div>
+
+                                <a class="moreInfo openModal flex">Detalhes</a>
+                            </div>
+
+                            <div class="modal flex">
+                                <div class="container flex column">
+                                    <header>
+                                        <a class="exitButton">×</a>
+                                        <h2>Detalhes</h2>
+                                    </header>
+                                    <div class="flex column">
+                                        <section class="flex column">
+                                            <h3>Local</h3>
+                                            <span>Hambúrguer dos Guris</span>
+                                        </section>
+                                        
+                                        <section class="flex column">
+                                            <h3>Data e Hora</h3>
+                                            <span>08 Out, 2021 - 20:00h</span>
+                                        </section>
+                                        
+                                        <section class="flex column">
+                                            <h3>Repertório principal</h3>
+                                            <span>Beatles, Creedence e Queen</span>
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="cardImg">
+                                <img src="../jm-media/images/images-2.jpg" alt="">
+                            </div>
+
+                            <div class="cardBody flex column">
+                                <div class="showDescription">
+                                    <h3 class="showLocation">Zé Café e Petiscos</h3>
+                                    <span class="showDate">15 Nov, 2021 - 22:00h</span>
+
+                                    <p>Descrição do show no Zé Café e Petiscos que vai acontecer no dia marcado</p>
+                                </div>
+                                
+                                <a class="moreInfo openModal flex">Detalhes</a>
+                            </div>
+
+                            <div class="modal flex">
+                                <div class="container flex column">
+                                    <header>
+                                        <a class="exitButton">×</a>
+                                        <h2>Detalhes</h2>
+                                    </header>
+                                    <div class="flex column">
+                                        <section class="flex column">
+                                            <h3>Local</h3>
+                                            <span>Zé Café e Petiscos</span>
+                                        </section>
+                                        
+                                        <section class="flex column">
+                                            <h3>Data e Hora</h3>
+                                            <span>15 Nov, 2021 - 22:00h</span>
+                                        </section>
+                                        
+                                        <section class="flex column">
+                                            <h3>Repertório principal</h3>
+                                            <span>ACDC, Nirvana e Guns and Roses</span>
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- ======================================================== -->
+        <!-- CONTATO -->
+        <div class="sectionContainer dark flex">
+            <section class="section flex column">
+                <div class="flex">
+                    <h1 id="contact">CONTATO</h1>
+                </div>
+
+                <div class="contact container flex">
+                    <div class="contactInfo flex column">
+                        <div class="contactOption location flex">
+                            <img src="../jm-media/icons/map-marker-alt-solid.svg" alt="" id="locationMark">
+                            <span>Palmares do Sul, RS - Brasil</span>
+                        </div>
+
+                        <div class="contactOption phone flex">
+                            <img src="../jm-media/icons/whatsapp-brands.svg" alt="" id="phone">
+                            <span>+55 51 995794033</span>
+                        </div>
+
+                        <div class="contactOption email flex">
+                            <img src="../jm-media/icons/envelope-regular.svg" alt="" id="email">
+                            <span>jackmarmotaoficial@gmail.com</span>
+                        </div>
+                    </div>
+
+                    <div class="contactInfo flex column">
+                        <a class="contactOption" href="https://twitter.com/MarmotaJack" target="_blank">
+                            <div class="twitter flex">
+                                <img src="../jm-media/icons/twitter-brands.svg" alt="" id="twitter">
+                                <span>@MarmotaJack</span>
+                            </div>
+                        </a>
+
+                        <a class="contactOption" href="https://www.instagram.com/jackmarmotaoficial" target="_blank">
+                            <div class="instagram flex">
+                                <img src="../jm-media/icons/instagram-brands.svg" alt="" id="instagram">
+                                <span>@jackmarmotaoficial</span>
+                            </div>
+                        </a>
+
+                        <a class="contactOption" href="https://www.facebook.com/JackMarmotaOficial" target="_blank">
+                            <div class="facebook flex">
+                                <img src="../jm-media/icons/facebook-24px.svg" alt="" id="facebook">
+                                <span>@JackMarmotaOficial</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        
+        <!-- ======================================================== -->
+        <!-- FOOTER -->
+        <div class="sectionContainer white flex">
+            <footer class="flex column">
+                <hr>
+
+                <div class="footer flex">
+                    <span class="flex">Feito com &#10084; por Marcelino Teixeira</span>
+
+                    <span>© 2021 Jack Marmota</span>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="./public/scripts/index.js"></script>
+    <script src="./public/scripts/audioData.js"></script>
+    <script src="./public/scripts/elements.js"></script>
+    <script src="./public/scripts/utils.js"></script>
+    <script src="./public/scripts/playerProgressBar.js"></script>
+    <script src="./public/scripts/playerButtons.js"></script>
+    <script src="./public/scripts/playerFunctions.js"></script>
+    <script src="./public/scripts/player.js"></script>
+</body>
+</html>

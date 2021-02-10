@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Vídeos | Jack Marmota</title>
+    <link rel="icon" href="../jm-media/icons/page-icon.png" type="image/x-icon">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/css/main.css">
+    <link rel="stylesheet" href="./public/css/index.css">
+    <link rel="stylesheet" href="./public/css/nav.css">
+    <link rel="stylesheet" href="./public/css/banner-slides.css">
+    <link rel="stylesheet" href="./public/css/shows-cards.css">
+    <link rel="stylesheet" href="./public/css/gallery.css">
+    <link rel="stylesheet" href="./public/css/modal.css">
+    <link rel="stylesheet" href="./public/css/pop-ups.css">
+    <link rel="stylesheet" href="./public/css/animations.css">
+    <link rel="stylesheet" href="./public/css/mobile.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;800&display=swap">
+</head>
+<body>
+    <div id="body">
+        <!-- ======================================================== -->
+        <!-- BARRA DE NAVEGAÇÃO -->
+        <ul class="nav flex">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="index.html#shows">SHOWS</a></li>
+            <li><a href="#contact">CONTATO</a></li>
+            <li><a href="about.html">SOBRE</a></li>
+            <li><a href="songs.html">MÚSICAS</a></li>
+            <li><a href="photos.html">FOTOS</a></li>
+            <li><a>VÍDEOS</a></li>
+            <li><a>MAIS</a>
+                <ul class="moreHidden flex column">
+                    <li><a href="index.html#shows">SHOWS</a></li>
+                    <li><a href="#contact">CONTATO</a></li>
+                    <li><a href="about.html">SOBRE</a></li>
+                    <li><a href="songs.html">MÚSICAS</a></li>
+                    <li><a href="photos.html">FOTOS</a></li>
+                    <li><a>VÍDEOS</a></li>
+                </ul>
+		    </li>
+        </ul>
+        
+
+        <!-- ======================================================== -->
+        <!-- SLIDES -->
+        <div class="banner">
+            <div class="mySlides flex">
+                <video controls src="../jm-media/videos/twist-and-shout_060320.mp4" alt="">
+            </div>
+            
+            <div class="mySlides flex">
+                <video controls src="../jm-media/videos/believer_060320.mp4" alt="">
+            </div>
+            
+            <div class="mySlides flex">
+                <video controls src="../jm-media/videos/born-to-be-wild_060320.mp4" alt="">
+            </div>
+
+            <a id="prevSlide" class="prev">&#10094;</a>
+            <a id="nextSlide" class="next">&#10095;</a>
+        </div>
+
+
+        <!-- ======================================================== -->
+        <!-- VÍDEOS -->
+        <div class="sectionContainer white flex">
+            <section class="section flex column">
+                <div class="flex">
+                    <h1 id="pageStart">VÍDEOS DA BANDA</h1>
+                </div>
+
+                <div>
+                    <p class="justify">I have created my band's fictional website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+
+
+                <!-- ======================================================== -->
+                <!-- SHOWS AO VIVO -->
+                <div class="galleryContainer flex column" style="margin-top:30px">
+                    <div class="header flex">
+                        <div>
+                            <h2>Shows Ao Vivo</h2>
+                            <p>Vídeos de nossas apresentações presenciais ao vivo</p>
+                        </div>
+                            
+                        <div class="seeAllDiv seeAllGallery">
+                            <a class="moreInfo seeAll flex">Mostrar mais</a>
+                        </div>
+                    </div>
+
+                    <div class="gallery flex">
+                        <div class="photo">
+                            <img class="openModal" src="../jm-media/images/images-1.jpg" alt="">
+
+                            <div class="thumbInfo">
+                                <h4>Hambúrguer dos Guris</h4> 
+                                <span>06/03/20</span>
+                            </div>
+
+                            <div class="modal flex">
+                                <div class="galleryModal container flex column">
+                                    <header>
+                                        <a class="exitButton">×</a>
+                                        <h2>Hambúrguer dos Guris - 06/03/2020</h2>
+                                    </header>
+                                    <div class="grid">
+                                        <section class="flex column">
+                                            <video src="../jm-media/videos/twist-and-shout_060320.mp4"></video>
+                                            <div class="playVideo openModal flex">
+                                                <img src="../jm-media/icons/play_arrow-24px.svg" alt="">
+                                            </div>
+                                            <div class="thumbInfo">
+                                                <h4>Believer</h4>
+                                                <span>Imagine Dragons</span>
+                                            </div>
+
+                                            <div class="modal flex column" style="padding-top: 50px;">
+                                                <div class="topBar flex">
+                                                    <img class="exitButton" src="../jm-media/icons/keyboard_arrow_down-24px.svg" alt="">
+                                                    <h2>Believer - Imagine Dragons</h2>
+                                                </div>
+                                                <main>
+                                                    <video controls src="../jm-media/videos/twist-and-shout_060320.mp4"></video>
+                                                </main>
+                                            </div>
+                                        </section>
+                                        
+                                        <section class="flex column">
+                                            <video src="../jm-media/videos/twist-and-shout_060320.mp4"></video>
+                                            <div class="playVideo openModal flex">
+                                                <img src="../jm-media/icons/play_arrow-24px.svg" alt="">
+                                            </div>
+                                            <div class="thumbInfo">
+                                                <h4>Born to be Wild</h4>
+                                                <span>Steppenwolf</span>
+                                            </div>
+
+                                            <div class="modal flex column" style="padding-top: 50px;">
+                                                <div class="topBar flex">
+                                                    <img class="exitButton" src="../jm-media/icons/keyboard_arrow_down-24px.svg" alt="">
+                                                    <h2>Born to be Wild - Steppenwolf</h2>
+                                                </div>
+                                                <main>
+                                                    <video controls src="../jm-media/videos/twist-and-shout_060320.mp4"></video>
+                                                </main>
+                                            </div>
+                                        </section>
+                                        
+                                        <section class="flex column">
+                                            <video src="../jm-media/videos/twist-and-shout_060320.mp4"></video>
+                                            <div class="playVideo openModal flex">
+                                                <img src="../jm-media/icons/play_arrow-24px.svg" alt="">
+                                            </div>
+                                            <div class="thumbInfo">
+                                                <h4>Crazy Little Thing Called Love</h4>
+                                                <span>Queen</span>
+                                            </div>
+
+                                            <div class="modal flex column" style="padding-top: 50px;">
+                                                <div class="topBar flex">
+                                                    <img class="exitButton" src="../jm-media/icons/keyboard_arrow_down-24px.svg" alt="">
+                                                    <h2>Crazy Little Thing Called Love - Queen</h2>
+                                                </div>
+                                                <main>
+                                                    <video controls src="../jm-media/videos/twist-and-shout_060320.mp4"></video>
+                                                </main>
+                                            </div>
+                                        </section>
+                                        
+                                        <section class="flex column">
+                                            <video src="../jm-media/videos/twist-and-shout_060320.mp4"></video>
+                                            <div class="playVideo openModal flex">
+                                                <img src="../jm-media/icons/play_arrow-24px.svg" alt="">
+                                            </div>
+                                            <div class="thumbInfo">
+                                                <h4>Twist and Shout</h4>
+                                                <span>Beatles</span>
+                                            </div>
+
+                                            <div class="modal flex column" style="padding-top: 50px;">
+                                                <div class="topBar flex">
+                                                    <img class="exitButton" src="../jm-media/icons/keyboard_arrow_down-24px.svg" alt="">
+                                                    <h2>Believer - Imagine Dragons</h2>
+                                                </div>
+                                                <main>
+                                                    <video controls src="../jm-media/videos/twist-and-shout_060320.mp4"></video>
+                                                </main>
+                                            </div>
+                                        </section>
+
+                                        <section class="flex column">
+                                            <video src="../jm-media/videos/twist-and-shout_060320.mp4"></video>
+                                            <div class="playVideo openModal flex">
+                                                <img src="../jm-media/icons/play_arrow-24px.svg" alt="">
+                                            </div>
+                                            <div class="thumbInfo">
+                                                <h4>Believer</h4>
+                                                <span>Imagine Dragons</span>
+                                            </div>
+
+                                            <div class="modal flex column" style="padding-top: 50px;">
+                                                <div class="topBar flex">
+                                                    <img class="exitButton" src="../jm-media/icons/keyboard_arrow_down-24px.svg" alt="">
+                                                    <h2>Believer - Imagine Dragons</h2>
+                                                </div>
+                                                <main>
+                                                    <video controls src="../jm-media/videos/twist-and-shout_060320.mp4"></video>
+                                                </main>
+                                            </div>
+                                        </section>
+                                        
+                                        <section class="flex column">
+                                            <video src="../jm-media/videos/twist-and-shout_060320.mp4"></video>
+                                            <div class="playVideo openModal flex">
+                                                <img src="../jm-media/icons/play_arrow-24px.svg" alt="">
+                                            </div>
+                                            <div class="thumbInfo">
+                                                <h4>Born to be Wild</h4>
+                                                <span>Steppenwolf</span>
+                                            </div>
+
+                                            <div class="modal flex column" style="padding-top: 50px;">
+                                                <div class="topBar flex">
+                                                    <img class="exitButton" src="../jm-media/icons/keyboard_arrow_down-24px.svg" alt="">
+                                                    <h2>Believer - Imagine Dragons</h2>
+                                                </div>
+                                                <main>
+                                                    <video controls src="../jm-media/videos/twist-and-shout_060320.mp4"></video>
+                                                </main>
+                                            </div>
+                                        </section>
+                                        
+                                        <section class="flex column">
+                                            <video src="../jm-media/videos/twist-and-shout_060320.mp4"></video>
+                                            <div class="playVideo openModal flex">
+                                                <img src="../jm-media/icons/play_arrow-24px.svg" alt="">
+                                            </div>
+                                            <div class="thumbInfo">
+                                                <h4>Crazy Little Thing Called Love</h4>
+                                                <span>Queen</span>
+                                            </div>
+
+                                            <div class="modal flex column" style="padding-top: 50px;">
+                                                <div class="topBar flex">
+                                                    <img class="exitButton" src="../jm-media/icons/keyboard_arrow_down-24px.svg" alt="">
+                                                    <h2>Believer - Imagine Dragons</h2>
+                                                </div>
+                                                <main>
+                                                    <video controls src="../jm-media/videos/twist-and-shout_060320.mp4"></video>
+                                                </main>
+                                            </div>
+                                        </section>
+                                        
+                                        <section class="flex column">
+                                            <video src="../jm-media/videos/twist-and-shout_060320.mp4"></video>
+                                            <div class="playVideo openModal flex">
+                                                <img src="../jm-media/icons/play_arrow-24px.svg" alt="">
+                                            </div>
+                                            <div class="thumbInfo">
+                                                <h4>Twist and Shout</h4>
+                                                <span>Beatles</span>
+                                            </div>
+
+                                            <div class="modal flex column" style="padding-top: 50px;">
+                                                <div class="topBar flex">
+                                                    <img class="exitButton" src="../jm-media/icons/keyboard_arrow_down-24px.svg" alt="">
+                                                    <h2>Believer - Imagine Dragons</h2>
+                                                </div>
+                                                <main>
+                                                    <video controls src="../jm-media/videos/twist-and-shout_060320.mp4"></video>
+                                                </main>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="photo">
+                            <img class="openModal" src="../jm-media/images/images-2.jpg" alt="">
+
+                            <div class="thumbInfo">
+                                <h4>Local</h4> 
+                                <span>--/--/--</span>
+                            </div>
+
+                            <div class="modal flex">
+                                <div class="galleryModal container flex column">
+                                    <header>
+                                        <a class="exitButton">×</a>
+                                        <h2>Não há vídeos no momento</h2>
+                                    </header>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="gallery flex">
+                        <div class="photo openModal">
+                            <img src="../jm-media/images/images-3.jpg" alt="">
+
+                            <div class="thumbInfo">
+                                <h4>Local</h4> 
+                                <span>--/--/--</span>
+                            </div>
+
+                            <div class="modal flex">
+                                <div class="galleryModal container flex column">
+                                    <header>
+                                        <a class="exitButton">×</a>
+                                        <h2>Não há vídeos no momento</h2>
+                                    </header>
+                                </div>
+                            </div>
+                        </div>
+                            
+                        <div class="photo openModal">
+                            <img src="../jm-media/images/images-1.jpg" alt="">
+
+                            <div class="thumbInfo">
+                                <h4>Local</h4> 
+                                <span>--/--/--</span>
+                            </div>
+
+                            <div class="modal flex">
+                                <div class="galleryModal container flex column">
+                                    <header>
+                                        <a class="exitButton">×</a>
+                                        <h2>Não há vídeos no momento</h2>
+                                    </header>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="hiddenContent none animate-down">
+                    <div class="gallery flex">
+                        <div class="photo openModal">
+                            <img src="../jm-media/images/images-3.jpg" alt="">
+
+                            <div class="thumbInfo">
+                                <h4>Local</h4> 
+                                <span>--/--/--</span>
+                            </div>
+
+                            <div class="modal flex">
+                                <div class="galleryModal container flex column">
+                                    <header>
+                                        <a class="exitButton">×</a>
+                                        <h2>Não há vídeos no momento</h2>
+                                    </header>
+                                </div>
+                            </div>
+                        </div>
+                            
+                        <div class="photo openModal">
+                            <img src="../jm-media/images/images-1.jpg" alt="">
+
+                            <div class="thumbInfo">
+                                <h4>Local</h4> 
+                                <span>--/--/--</span>
+                            </div>
+
+                            <div class="modal flex">
+                                <div class="galleryModal container flex column">
+                                    <header>
+                                        <a class="exitButton">×</a>
+                                        <h2>Não há vídeos no momento</h2>
+                                    </header>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        <!-- ======================================================== -->
+        <!-- LIVES -->
+        <div class="sectionContainer dark flex">
+            <section class="section flex column">
+                <div class="galleryContainer flex column">
+                    <div class="header flex">
+                        <div>
+                            <h2>Lives</h2>
+                            <p>Trechos de nossas lives, transmitidas pelo YouTube</p>
+                        </div>
+                            
+                        <div class="seeAllDiv seeAllGallery">
+                            <a class="moreInfo seeAll flex">Mostrar mais</a>
+                        </div>
+                    </div>
+
+                    <div class="gallery flex">
+                        <div class="photo openModal">
+                            <img src="../jm-media/images/images-1.jpg" alt="">
+
+                            <div class="thumbInfo">
+                                <span>--/--/--</span>
+                            </div>
+
+                            <div class="modal flex">
+                                <div class="galleryModal container flex column">
+                                    <header>
+                                        <a class="exitButton">×</a>
+                                        <h2>Não há vídeos no momento</h2>
+                                    </header>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="photo openModal">
+                            <img src="../jm-media/images/images-2.jpg" alt="">
+
+                            <div class="thumbInfo">
+                                <span>--/--/--</span>
+                            </div>
+
+                            <div class="modal flex">
+                                <div class="galleryModal container flex column">
+                                    <header>
+                                        <a class="exitButton">×</a>
+                                        <h2>Não há vídeos no momento</h2>
+                                    </header>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="gallery flex">
+                        <div class="photo openModal">
+                            <img src="../jm-media/images/images-3.jpg" alt="">
+
+                            <div class="thumbInfo">
+                                <span>--/--/--</span>
+                            </div>
+
+                            <div class="modal flex">
+                                <div class="galleryModal container flex column">
+                                    <header>
+                                        <a class="exitButton">×</a>
+                                        <h2>Não há vídeos no momento</h2>
+                                    </header>
+                                </div>
+                            </div>
+                        </div>
+                            
+                        <div class="photo openModal">
+                            <img src="../jm-media/images/images-1.jpg" alt="">
+
+                            <div class="thumbInfo">
+                                <span>--/--/--</span>
+                            </div>
+
+                            <div class="modal flex">
+                                <div class="galleryModal container flex column">
+                                    <header>
+                                        <a class="exitButton">×</a>
+                                        <h2>Não há vídeos no momento</h2>
+                                    </header>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="hiddenContent none animate-down">
+                    <div class="gallery flex">
+                        <div class="photo openModal">
+                            <img src="../jm-media/images/images-3.jpg" alt="">
+
+                            <div class="thumbInfo">
+                                <h4>Local</h4> 
+                                <span>--/--/--</span>
+                            </div>
+
+                            <div class="modal flex">
+                                <div class="galleryModal container flex column">
+                                    <header>
+                                        <a class="exitButton">×</a>
+                                        <h2>Não há vídeos no momento</h2>
+                                    </header>
+                                </div>
+                            </div>
+                        </div>
+                            
+                        <div class="photo openModal">
+                            <img src="../jm-media/images/images-1.jpg" alt="">
+
+                            <div class="thumbInfo">
+                                <h4>Local</h4> 
+                                <span>--/--/--</span>
+                            </div>
+
+                            <div class="modal flex">
+                                <div class="galleryModal container flex column">
+                                    <header>
+                                        <a class="exitButton">×</a>
+                                        <h2>Não há vídeos no momento</h2>
+                                    </header>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery flex">
+                        <div class="photo openModal">
+                            <img src="../jm-media/images/images-3.jpg" alt="">
+
+                            <div class="thumbInfo">
+                                <span>--/--/--</span>
+                            </div>
+
+                            <div class="modal flex">
+                                <div class="galleryModal container flex column">
+                                    <header>
+                                        <a class="exitButton">×</a>
+                                        <h2>Não há vídeos no momento</h2>
+                                    </header>
+                                </div>
+                            </div>
+                        </div>
+                            
+                        <div class="photo openModal">
+                            <img src="../jm-media/images/images-1.jpg" alt="">
+
+                            <div class="thumbInfo">
+                                <span>--/--/--</span>
+                            </div>
+
+                            <div class="modal flex">
+                                <div class="galleryModal container flex column">
+                                    <header>
+                                        <a class="exitButton">×</a>
+                                        <h2>Não há vídeos no momento</h2>
+                                    </header>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ======================================================== -->
+        <!-- CLIPES -->
+        <div class="sectionContainer white flex">
+            <section class="section flex column">
+                <div class="galleryContainer flex column">
+                    <div class="header flex">
+                        <div>
+                            <h2>Clipes</h2>
+                            <p>Nossos video-clipes, também disponíveis no YouTube</p>
+                        </div>
+                            
+                        <!-- <div class="seeAllDiv seeAllGallery">
+                            <a class="moreInfo seeAll flex">Mostrar mais</a>
+                        </div> -->
+                    </div>
+
+                    <div class="gallery flex">
+                        <div class="photo openModal">
+                            <img src="../jm-media/images/images-1.jpg" alt="">
+
+                            <div class="thumbInfo">
+                                <span>--/--/--</span>
+                            </div>
+
+                            <div class="modal flex">
+                                <div class="galleryModal container flex column">
+                                    <header>
+                                        <a class="exitButton">×</a>
+                                        <h2>Não há vídeos no momento</h2>
+                                    </header>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="photo openModal">
+                            <img src="../jm-media/images/images-2.jpg" alt="">
+
+                            <div class="thumbInfo">
+                                <span>--/--/--</span>
+                            </div>
+
+                            <div class="modal flex">
+                                <div class="galleryModal container flex column">
+                                    <header>
+                                        <a class="exitButton">×</a>
+                                        <h2>Não há vídeos no momento</h2>
+                                    </header>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="gallery flex">
+                        <div class="photo openModal">
+                            <img src="../jm-media/images/images-3.jpg" alt="">
+
+                            <div class="thumbInfo">
+                                <span>--/--/--</span>
+                            </div>
+
+                            <div class="modal flex">
+                                <div class="galleryModal container flex column">
+                                    <header>
+                                        <a class="exitButton">×</a>
+                                        <h2>Não há vídeos no momento</h2>
+                                    </header>
+                                </div>
+                            </div>
+                        </div>
+                            
+                        <div class="photo openModal">
+                            <img src="../jm-media/images/images-1.jpg" alt="">
+
+                            <div class="thumbInfo">
+                                <span>--/--/--</span>
+                            </div>
+
+                            <div class="modal flex">
+                                <div class="galleryModal container flex column">
+                                    <header>
+                                        <a class="exitButton">×</a>
+                                        <h2>Não há vídeos no momento</h2>
+                                    </header>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- <div class="hiddenContent none animate-down">
+                    <div class="gallery flex">
+                        <div class="photo openModal">
+                            <img src="../jm-media/images/images-3.jpg" alt="">
+
+                            <div class="thumbInfo">
+                                <h4>Local</h4> 
+                                <span>--/--/--</span>
+                            </div>
+
+                            <div class="modal flex">
+                                <div class="galleryModal container flex column">
+                                    <header>
+                                        <a class="exitButton">×</a>
+                                        <h2>Não há vídeos no momento</h2>
+                                    </header>
+                                </div>
+                            </div>
+                        </div>
+                            
+                        <div class="photo openModal">
+                            <img src="../jm-media/images/images-1.jpg" alt="">
+
+                            <div class="thumbInfo">
+                                <h4>Local</h4> 
+                                <span>--/--/--</span>
+                            </div>
+
+                            <div class="modal flex">
+                                <div class="galleryModal container flex column">
+                                    <header>
+                                        <a class="exitButton">×</a>
+                                        <h2>Não há vídeos no momento</h2>
+                                    </header>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div> -->
+                </div>
+            </section>
+        </div>
+
+
+        <!-- ======================================================== -->
+        <!-- CONTATO -->
+        <div class="sectionContainer dark flex">
+            <section class="section flex column">
+                <div class="flex">
+                    <h1 id="contact">CONTATO</h1>
+                </div>
+
+                <div class="contact container flex">
+                    <div class="contactInfo flex column">
+                        <div class="contactOption location flex">
+                            <img src="../jm-media/icons/map-marker-alt-solid.svg" alt="" id="locationMark">
+                            <span>Palmares do Sul, RS - Brasil</span>
+                        </div>
+
+                        <div class="contactOption phone flex">
+                            <img src="../jm-media/icons/whatsapp-brands.svg" alt="" id="phone">
+                            <span>+55 51 995794033</span>
+                        </div>
+
+                        <div class="contactOption email flex">
+                            <img src="../jm-media/icons/envelope-regular.svg" alt="" id="email">
+                            <span>jackmarmotaoficial@gmail.com</span>
+                        </div>
+                    </div>
+
+                    <div class="contactInfo flex column">
+                        <a class="contactOption" href="https://twitter.com/MarmotaJack" target="_blank">
+                            <div class="twitter flex">
+                                <img src="../jm-media/icons/twitter-brands.svg" alt="" id="twitter">
+                                <span>@MarmotaJack</span>
+                            </div>
+                        </a>
+
+                        <a class="contactOption" href="https://www.instagram.com/jackmarmotaoficial" target="_blank">
+                            <div class="instagram flex">
+                                <img src="../jm-media/icons/instagram-brands.svg" alt="" id="instagram">
+                                <span>@jackmarmotaoficial</span>
+                            </div>
+                        </a>
+
+                        <a class="contactOption" href="https://www.facebook.com/JackMarmotaOficial" target="_blank">
+                            <div class="facebook flex">
+                                <img src="../jm-media/icons/facebook-24px.svg" alt="" id="facebook">
+                                <span>@JackMarmotaOficial</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        
+        <!-- ======================================================== -->
+        <!-- FOOTER -->
+        <div class="sectionContainer white flex">
+            <footer class="flex column">
+                <hr>
+
+                <div class="footer flex">
+                    <span class="flex">Feito com &#10084; por Marcelino Teixeira</span>
+
+                    <span>© 2021 Jack Marmota</span>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="./public/scripts/index.js"></script>
+    <script src="./public/scripts/utils.js"></script>
+</body>
+</html>

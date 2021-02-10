@@ -1,0 +1,56 @@
+:root {
+    --background: white;
+    --border: 1px solid #999999;
+    --hover: #f1f1f1;
+    --active: #e1e1e1;
+}
+
+
+* {
+    box-sizing: border-box;
+    font-family: Lato, sans-serif;
+	-webkit-tap-highlight-color: transparent;
+    /* border: 1px solid red!important; */
+}
+
+
+body {
+    height: 100vh;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+
+.justify {
+    text-align: justify;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: auto auto;
+    gap: 25px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.none {
+    display: none;
+}

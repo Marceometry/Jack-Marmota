@@ -1,0 +1,96 @@
+/* options popup */
+
+.optionsPopUp {
+    min-width: 100px;
+    margin: 10px 0 0;
+    padding: 0;
+    border: var(--border);
+    background: var(--background);
+    position: absolute;
+}
+
+.optionsPopUp li {
+    width: 100%;
+    padding: 5px 15px;
+    border-bottom: var(--border);
+    cursor: pointer;
+}
+
+.optionsPopUp li:last-child {
+    border-bottom: none;
+    border-radius: 0 0 10px 10px;
+}
+
+.optionsPopUp li:hover {
+    background: var(--hover);
+    transition: 100ms;
+}
+
+.optionsPopUp li:active {
+    background: var(--active);
+}
+
+
+/* list options */
+
+.list-settings {
+    width: 100%;
+    justify-content: flex-start;
+}
+
+#reorderOptions {
+    border-radius: 0 10px 10px 10px;
+}
+
+#reorderOptions li:first-child {
+    border-radius: 0 10px 0 0;
+}
+
+
+/* in-list song options */
+
+.songOptionsPopUp {
+    border-radius: 10px;
+    margin: 0;
+    top: -20px;
+    right: 5px;
+    z-index: 2;
+    text-align: center;
+}
+
+.songOptionsPopUp li {
+    margin: 0!important;
+    border-radius: 0!important;
+    border: 0!important;
+    border-bottom: var(--border)!important;
+}
+
+.songOptionsPopUp li:first-child {
+    border-radius: 10px 10px 0 0!important;
+}
+
+.songOptionsPopUp li:last-child {
+    border-radius: 0 0 10px 10px!important;
+    border-bottom: 0!important;
+}
+
+
+/* current song options */
+
+.songOptionsContainer {
+    align-items: flex-end;
+}
+
+#songOptionsList {
+    width: fit-content;
+    margin-right: 0;
+    text-align: center;
+}
+
+#songOptionsList {
+    border-radius: 10px 0 10px 10px;
+}
+
+#songOptionsList li:first-child {
+    border-radius: 10px 0 0 0;
+}

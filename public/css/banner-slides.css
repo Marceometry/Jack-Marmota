@@ -1,0 +1,95 @@
+/* ================================================================= */
+
+/* slides */
+
+.banner {
+    width: 100%;
+    height: min(55vw, 100vh);
+    box-shadow: 1px 0 10px 1px rgb(151, 151, 151);
+    position: relative;
+    overflow: hidden;
+}
+
+.banner img, .banner video {
+    width: 100%;
+    height: min(55vw, 100vh);
+    object-fit: cover;
+    user-select: none;
+}
+
+/* next and previous */
+
+.prev, .next {
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    border-radius: 0 8px 8px 0;
+    background: rgba(0, 0, 0, 0.6);
+    transition: 0.3s ease;
+    top: 50%;
+    position: absolute;
+    cursor: pointer;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 8px 0 0 8px;
+}
+
+.prev:hover, .next:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+
+.dotContainer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 5px 6px;
+    border-radius: 50%;
+    border: 1px solid rgb(78, 78, 78);
+    background: rgb(230, 230, 230);
+    display: inline-block;
+    cursor: pointer;
+    transition: background 0.4s ease;
+}
+
+.active, .dot:hover {
+    background: rgb(170, 170, 170);
+}
+
+/* ================================================================= */
+
+/* go-down arrow */
+
+/* a#goDown {
+    cursor: pointer;
+    align-self: flex-end;
+    position: absolute;
+}
+
+a#goDown:hover img {
+    opacity: 1;
+}
+
+a#goDown:active img {
+    background: rgb(160, 160, 160);
+}
+
+a#goDown img {
+    width: 72px;
+    height: 72px;
+    opacity: .88;
+    border-radius: 20px;
+    box-shadow: 0 0 3px 1px rgb(175, 175, 175);
+    background: rgb(175, 175, 175);
+} */

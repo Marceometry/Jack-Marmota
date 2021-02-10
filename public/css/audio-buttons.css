@@ -1,0 +1,78 @@
+.aditionalButton {
+    display: none;
+}
+
+/* minimizar player */
+
+#minimizePlayerNav {
+    width: 100%;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+
+#minimizePlayer {
+    width: 44px;
+}
+
+
+/* mute - volume bar */
+
+.volumeBar {
+    width: fit-content;
+    height: fit-content;
+    padding-right: 10px;
+}
+
+.volumeBar img.button {
+    width: 36px;
+    margin-right: 10px;
+}
+
+#volumeBar {
+    width: 300px;
+    margin: 20px 0;
+    padding: 10px 0;
+    background: var(--background);
+    cursor: pointer;
+}
+
+/* player buttons */
+
+.button.small {
+    width: 28px;
+}
+
+#random {
+    opacity: 0.5;
+}
+
+.buttons {
+    width: 30%;
+    margin: 0 15px 0 0;
+    justify-content: space-between;
+    position: absolute;
+    right: 10px;
+}
+
+.buttons.extendedPlayer {
+    width: 80%;
+    margin: 15px;
+    position: static;
+}
+
+img.button {
+    width: 40px;
+    padding: 3px;
+    border-radius: 50%;
+    cursor: pointer;
+    user-select: none;
+}
+
+img.button:hover {
+    transition: 200ms;
+    background: var(--hover);
+}
+
+img.button:active {
+    background: var(--active);
+}

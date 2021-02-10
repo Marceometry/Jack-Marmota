@@ -1,0 +1,146 @@
+/* =================================================== */
+/* music playlist */
+
+.playlist {
+    width: 100%;
+    height: fit-content;
+}
+
+#playlist {
+    width: 100%;
+    height: 650px;
+    margin: 0;
+    padding: 5px;
+    font-size: 15px;
+    overflow: auto;
+}
+
+
+/* =================================================== */
+/* nav */
+
+.filters {
+    width: 97%;
+}
+
+.filters ul {
+    margin: 0 0 5px;
+    padding: 0;
+    border-bottom: var(--border);
+    justify-content: space-between!important;
+}
+
+.filters ul li {
+    padding: 5px 40px;
+    border-radius: 10px 10px 0 0;
+    cursor: pointer;
+    user-select: none;
+}
+
+.filters ul li:hover {
+    background: var(--hover);
+    transition: background 300ms;
+}
+
+.filters ul li:active {
+    background: var(--active);
+}
+
+
+/* =================================================== */
+/* listed songs */
+
+#playlist li {
+    margin: 10px 0;
+
+    border-radius: 10px;
+    border: 1px solid #a0a0a0;
+    justify-content: space-between;
+}
+
+
+#playlist li .divContainer {
+    width: 100%;
+    height: 100%;
+    padding: 10px 0 10px 10px;
+    border-radius: 10px 0 0 10px;
+
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+
+#playlist li .album-img {
+    width: 55px;
+    height: 55px;
+    margin-right: 10px;
+
+    border-radius: 8px;
+    border: var(--border);
+    background: var(--hover);
+    overflow: hidden;
+}
+
+
+#playlist li .divTitle {
+    overflow: hidden;
+}
+
+#playlist li h3 {
+    width: fit-content;
+    margin: 0;
+}
+
+
+#playlist li p {
+    width: fit-content;
+    margin: 10px 0 0;
+}
+
+#playlist li .divOptions {
+    height: 75px;
+    padding: 10px;
+    border-radius: 0 10px 10px 0;
+    position: relative;
+}
+
+
+#playlist li .divContainer:hover {
+    background: var(--hover);
+    transition: 100ms;
+}
+#playlist li .divContainer:hover + .divOptions {
+    background: var(--hover);
+    transition: 100ms;
+}
+
+#playlist li .divContainer:active {
+    background: var(--active);
+}
+#playlist li .divContainer:active + .divOptions {
+    background: var(--active);
+    transition: 100ms;
+}
+
+
+#playlist .playing .divContainer,
+#playlist .playing .divOptions,
+#playlist .playing .divContainer:hover,
+#playlist .playing .divContainer:hover + .divOptions,
+#playlist .playing .divContainer:active {
+    background: #cccccc;
+}
+
+
+/* =================================================== */
+/* ================================================ */
+/* mobile */
+
+/* @media (max-width: 500px) {
+        
+    #playlist li:last-child h3 {
+        animation: float-text 15s linear 0s infinite;
+    }
+} */

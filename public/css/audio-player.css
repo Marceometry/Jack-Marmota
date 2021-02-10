@@ -1,0 +1,222 @@
+/* player de áudio */
+
+.player {
+    height: 92px!important;
+    margin-top: 10px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.player.extendedPlayer {
+    height: fit-content!important;
+}
+
+
+/* album image */
+
+#currentSongAlbum {
+    width: 60px;
+    height: 60px;
+    margin: 5px 10px;
+    border-radius: 8px;
+
+    background: var(--hover);
+    border: var(--border);
+    overflow: hidden;
+    position: absolute;
+    left: 10px;
+}
+
+#currentSongAlbum.extendedPlayer {
+    width: 200px;
+    height: 200px;
+    margin: 0;
+    border-radius: 15px;
+    position: static;
+}
+
+
+.album-img {
+    box-shadow: 0 0 15px 2px #a1a1a1;
+    object-fit: cover;
+    user-select: none;
+}
+
+
+/* song info */
+
+#songMetadata {
+    width: 50%;
+    margin: 0;
+    align-items: flex-start;
+    cursor: pointer;
+    position: absolute;
+    left: 95px;
+}
+
+#songMetadata.extendedPlayer {
+    width: 70%;
+    margin: 0 0 15px;
+    align-items: center;
+    cursor: default;
+    position: static;
+}
+
+
+#titleContainer {
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#title {
+    width: fit-content;
+    margin: 0 0 10px;
+}
+
+#title.extendedPlayer {
+    margin: 20px 0 10px;
+}
+
+
+#songMetadata section {
+    width: 100%;
+    justify-content: flex-start;
+}
+
+#songMetadata section.extendedPlayer {
+    justify-content: center;
+}
+
+
+#artistAlbumContainer {
+    width: fit-content;
+    margin: 0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#artistAlbumContainer.extendedPlayer {
+    width: 74.5%;
+    margin: 0 10px;
+}
+
+
+/* mobile */
+
+@media (max-width: 800px) {
+    #canvas-progress {
+        width: 60%;
+    }
+}
+
+
+@media (max-width: 550px) {
+    #volumeBar {
+        width: 170px!important;
+    }
+}
+
+
+@media (max-width: 510px) {
+    .buttons.minimizedPlayer {
+        margin: 0!important;
+    }
+
+    .buttons.minimizedPlayer img {
+        width: 35px!important;
+    }
+
+    #songMetadata.minimizedPlayer {
+        width: 45%
+    }
+}
+
+
+@media (max-width: 475px) {
+    .buttons.minimizedPlayer img {
+        width: 30px!important;
+    }
+}
+
+
+@media (max-width: 440px) {
+    .player {
+        height: 78px!important;
+    }
+
+    .album-img {
+        width: 46px!important;
+        height: 46px!important;
+    }
+    
+    #currentSongAlbum.extendedPlayer {
+        width: 150px!important;
+        height: 150px!important;
+    }
+
+    #songMetadata.extendedPlayer,
+    #progressBarContainer,
+    .buttons.extendedPlayer {
+        width: 90%!important;
+    }
+
+    #songMetadata.minimizedPlayer {
+        left: 76px;
+    }
+    
+    #songMetadata, #playlist li {
+        font-size: 14px;
+    }
+
+    .divOptions {
+        height: 66px!important;
+        padding-left: 5px!important;
+    }
+
+    .divOptions img {
+        width: 31px!important;
+        height: 31px;
+    }
+}
+
+
+@media (max-width: 400px) {
+    #volumeBar {
+        width: 120px!important;
+    }
+}
+
+
+@media (max-width: 370px) {
+    .player p {
+        font-size: 16px;
+    }
+
+    .buttons.minimizedPlayer {
+        width: 25%!important;
+    }
+
+    .buttons.minimizedPlayer img {
+        width: 25px!important;
+    }
+}
+
+
+@media (max-width: 350px) {
+    .player p {
+        font-size: 14px;
+    }
+
+    #volumeBar {
+        width: 70px!important;
+    }
+
+    #canvas-progress {
+        width: 50%;
+    }
+    
+    #songMetadata.minimizedPlayer, #playlist li {
+        font-size: 12px;
+    }
+}
