@@ -4,8 +4,9 @@
 
 .iframeContainer iframe {
 	width: 100%;
-	height: min(50vw, 500px);
+	height: min(50vw, 540px);
 }
+
 
 .tableContainer {
     width: 100%;
@@ -13,5 +14,18 @@
 
 .tableContainer table {
     width: 100%;
-    margin-top: 30px;
+    margin-top: 20px;
+    border-spacing: 7px;
+}
+
+.tableContainer table th,
+.tableContainer table td {
+    width: 50%;
+    padding: 15px;
+    border-radius: 10px;
+    border: var(--border);
+}
+
+.tableContainer table td {
+    padding-left: 20px;
 }
