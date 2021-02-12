@@ -24,13 +24,13 @@ mainFunctions = {
 
     list() {
         playlist.innerHTML = ''
-        this.createPlaylist()
+        this.createPlaylist(audios)
         buttons.selectSong()
         this.playingInList()
     },
 
-    createPlaylist() {
-        for (let i = 0; i < audios.length; i++) {
+    createPlaylist(array) {
+        for (let i = 0; i < array.length; i++) {
             var music = document.createElement("li")
             // container geral
             divContainer = document.createElement("div")
@@ -59,14 +59,14 @@ mainFunctions = {
             dataDisplay = document.createAttribute('data-display')
             
             // adicionar valores
-            audios[i].index = i
+            array[i].index = i
             dataIndex.value = i
-            dataTitle.value = audios[i].title 
-            dataArtist.value = audios[i].artist 
-            dataAlbum.value = audios[i].album
+            dataTitle.value = array[i].title 
+            dataArtist.value = array[i].artist 
+            dataAlbum.value = array[i].album
             dataDisplay.value = '0'
 
-            titleH3.innerText = audios[i].title
+            titleH3.innerText = array[i].title
             artistAlbumP.innerHTML = `${dataArtist.value} - ${dataAlbum.value}`
 
             options.src = '../jm-media/icons/more_vert-24px.svg'
@@ -123,7 +123,7 @@ mainFunctions = {
 
             // adicionar imagens dos álbuns
             img = document.querySelector(`#playlist li #album${i} img`)
-            utils.verifyImg(audios, i, img)
+            utils.verifyImg(array, i, img)
         }
     },
 

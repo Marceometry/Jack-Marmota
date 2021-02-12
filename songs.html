@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./public/css/main.css">
     <link rel="stylesheet" href="./public/css/index.css">
     <link rel="stylesheet" href="./public/css/gallery.css">
+    <link rel="stylesheet" href="./public/css/songs.css">
     <link rel="stylesheet" href="./public/css/nav.css">
     <link rel="stylesheet" href="./public/css/banner-slides.css">
     <link rel="stylesheet" href="./public/css/shows-cards.css">
@@ -24,6 +25,8 @@
 </head>
 <body>
     <div id="body">
+        <!-- ======================================================== -->
+        <!-- NAV BAR -->
         <ul class="nav flex">
             <li><a href="index.html">HOME</a></li>
             <li><a href="index.html#shows">SHOWS</a></li>
@@ -45,6 +48,8 @@
         </ul>
 
 
+        <!-- ======================================================== -->
+        <!-- SLIDES -->
         <div class="banner">
             <div class="mySlides flex">
                 <img src="../jm-media/images/images-1.jpg" alt="">
@@ -69,6 +74,8 @@
         </div>
 
 
+        <!-- ======================================================== -->
+        <!-- MÚSICAS -->
         <div class="sectionContainer white flex">
             <section class="section flex column">
                 <div class="flex">
@@ -80,19 +87,26 @@
                 </div>
 
 
-                <div class="galleryContainer flex column" style="margin-top:30px">
+                <!-- ======================================================== -->
+                <!-- YOUTUBE -->
+                <div class="galleryContainer marginTop flex column">
                     <div class="header flex">
                         <div>
-                            <h2>Gravações</h2>
-                            <p>Músicas que já gravamos em estúdio</p>
+                            <h2>Últimos lançamentos</h2>
+                            <p>Ouça nossas músicas mais recentes agora mesmo no YouTube</p>
                         </div>
                             
-                        <!-- <div class="seeAllDiv seeAllGallery">
-                            <a class="moreInfo flex">Mostrar mais</a>
-                        </div> -->
+                        <div class="seeAllDiv seeAllGallery">
+                            <a id="seeOnYT" class="moreInfo seeAll flex" href="https://www.youtube.com/user/rudycapincho/videos" target="_blank">Ver mais no YouTube</a>
+                        </div>
                     </div>
 
-                    <div class="gallery flex">
+
+                    <div class="iframeContainer">
+                        <iframe src="https://www.youtube.com/embed/mBlkl83uETY" frameborder="0"></iframe>
+                    </div>
+
+                    <!-- <div class="gallery flex">
                         <div class="photo">
                             <img src="../jm-media/images/images-1.jpg" alt="">
 
@@ -114,32 +128,7 @@
                                 </span>
                             </div>
                         </div>
-                    </div>
-
-
-                    <div class="gallery flex">
-                        <div class="photo">
-                            <img src="../jm-media/images/images-3.jpg" alt="">
-
-                            <div class="thumbInfo">
-                                <h4>Hambúrguer dos Guris</h4> 
-                                <span>
-                                    25/03/21
-                                </span>
-                            </div>
-                        </div>
-                            
-                        <div class="photo">
-                            <img src="../jm-media/images/images-1.jpg" alt="">
-
-                            <div class="thumbInfo">
-                                <h4>Hambúrguer dos Guris</h4> 
-                                <span>
-                                    25/03/21
-                                </span>
-                            </div>
-                        </div>
-                    </div>
+                    </div> -->
                 </div>
             </section>
         </div>
@@ -163,8 +152,8 @@
                     <nav class="filters">
                         <ul class="flex">
                             <li>Todas</li>
-                            <li>Álbuns</li>
-                            <li>Artistas</li>
+                            <li>Autorais</li>
+                            <li>Covers</li>
                         </ul>
                     </nav>
 
@@ -257,13 +246,15 @@
         </div>
 
 
+        <!-- ======================================================== -->
+        <!-- COVERS -->
         <div class="sectionContainer white flex">
             <section class="section flex column">
-                <div class="galleryContainer flex column" style="margin-top:30px">
+                <div class="galleryContainer marginTop flex column">
                     <div class="header flex">
                         <div>
-                            <h2>Repertório</h2>
-                            <p>Nosso repertótio atual completo</p>
+                            <h2>Repertório de covers</h2>
+                            <p>Nosso atual repertótio de covers completo para apresentações ao vivo</p>
                         </div>
                             
                         <!-- <div class="seeAllDiv seeAllGallery">
@@ -271,7 +262,28 @@
                         </div> -->
                     </div>
 
-                    <div class="gallery flex">
+                    <div class="tableContainer">
+                        <table>
+                            <tr>
+                                <th>Músicas</th>
+                                <th>Artistas</th>
+                            </tr>
+                            <tr>
+                                <td>À sua Maneira</td>
+                                <td>Capital Inicial</td>
+                            </tr>
+                            <tr>
+                                <td>Andando em Círculos</td>
+                                <td>Senhor Wilson</td>
+                            </tr>
+                            <tr>
+                                <td>Bad Moon Rising</td>
+                                <td>Creedence</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- <div class="gallery flex">
                         <div class="photo">
                             <img src="../jm-media/images/images-1.jpg" alt="">
 
@@ -319,11 +331,13 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </section>
         </div>
 
 
+        <!-- ======================================================== -->
+        <!-- CONTATO -->
         <div class="sectionContainer dark flex">
             <section class="section flex column">
                 <div class="flex">
@@ -375,6 +389,8 @@
         </div>
         
         
+        <!-- ======================================================== -->
+        <!-- FOOTER -->
         <div class="sectionContainer white flex">
             <footer class="flex column">
                 <hr>
