@@ -21,7 +21,7 @@
 .tableContainer table th,
 .tableContainer table td {
     width: 50%;
-    padding: 15px;
+    padding: 10px;
     border-radius: 10px;
     border: var(--border);
 }
