@@ -1,0 +1,17 @@
+.iframeContainer {
+	width: 100%;
+}
+
+.iframeContainer iframe {
+	width: 100%;
+	height: min(50vw, 500px);
+}
+
+.tableContainer {
+    width: 100%;
+}
+
+.tableContainer table {
+    width: 100%;
+    margin-top: 30px;
+}
