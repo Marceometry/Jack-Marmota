@@ -48,19 +48,19 @@ buttons = {
     mute() {
         if (audio.muted) {
             audio.muted = false
-            mute.src = '../jm-media/icons/volume_up-24px.svg'
+            mute.src = './public/media/icons/volume_up-24px.svg'
         } else {
             audio.muted = true
-            mute.src = '../jm-media/icons/volume_off-24px.svg'
+            mute.src = './public/media/icons/volume_off-24px.svg'
         }
     },
 
     setVolume(value) {
         audio.volume = value / 100
-        mute.src = '../jm-media/icons/volume_up-24px.svg'
+        mute.src = './public/media/icons/volume_up-24px.svg'
         
         if (volumeBar.value == 0) {
-            mute.src = '../jm-media/icons/volume_off-24px.svg'
+            mute.src = './public/media/icons/volume_off-24px.svg'
         }
         
         if (audio.muted) {
@@ -95,9 +95,9 @@ buttons = {
 
     toggleRepeat() {
         if (repeat.src.indexOf('repeat-24px.svg')!=-1) {
-            repeat.src = '../jm-media/icons/repeat_one-24px.svg';
+            repeat.src = './public/media/icons/repeat_one-24px.svg';
         } else {
-            repeat.src = '../jm-media/icons/repeat-24px.svg';
+            repeat.src = './public/media/icons/repeat-24px.svg';
         }
        
     },
@@ -118,12 +118,12 @@ buttons = {
 
     play() {
         audio.play()
-        playPause.src = '../jm-media/icons/pause-24px.svg'
+        playPause.src = './public/media/icons/pause-24px.svg'
     },
 
     pause() {
         audio.pause()
-        playPause.src = '../jm-media/icons/play_arrow-24px.svg'
+        playPause.src = './public/media/icons/play_arrow-24px.svg'
     },
 
 
