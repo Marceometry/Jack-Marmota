@@ -2,7 +2,7 @@
 
 <p> [ok] - Botão para sair do modal na página de videos </p>
 <p> [ok] - Página rolando por trás do modal aberto </p>
-<p> [] - Float Text no player de música </p>
+<p> [  ] - Float Text no player de música </p>
 
 
 <br>
@@ -11,8 +11,8 @@
 
 <p> [ok] - Reprodução de vídeo no modal </p>
 <p> [ok] - Galeria de Fotos no Modal </p>
-<p> [] - Página "músicas" </p>
-<p> [] - Página "sobre" </p>
+<p> [  ] - Página "músicas" </p>
+<p> [  ] - Página "sobre" </p>
 
 
 <br>
