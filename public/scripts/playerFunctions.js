@@ -69,7 +69,7 @@ mainFunctions = {
             titleH3.innerText = array[i].title
             artistAlbumP.innerHTML = `${dataArtist.value} - ${dataAlbum.value}`
 
-            options.src = '../public/media/icons/more_vert-24px.svg'
+            options.src = './public/media/icons/more_vert-24px.svg'
 
             liSelect.innerText = 'Selecionar'
             liDetails.innerText = 'Detalhes'
