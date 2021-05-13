@@ -51,7 +51,7 @@ utils = {
 
     verifyImg(array, i, j) {
         if (array[i].albumImg == undefined) {
-            j.src = './public/media/icons/audiotrack-24px.svg'
+            j.src = '../public/media/icons/audiotrack-24px.svg'
             j.style.width =  '75%'
             j.style.height =  '75%'
         } else {
